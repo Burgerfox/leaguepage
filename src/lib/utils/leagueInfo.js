@@ -1,18 +1,13 @@
 /*   STEP 1   */
-export const leagueID = "your_league_id"; // your league ID
-export const leagueName = "your_league_name"; // your league name
-export const dues = 100; // (optional) used in template constitution page
-export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
-export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
+export const leagueID = "1124841414799155200"; // your league ID
+export const leagueName = "The Infinity League"; // your league name
+export const dues = 0; // (optional) used in template constitution page
+export const dynasty = false; // true for dynasty leagues, false for redraft and keeper
+export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Founded in 2023, the Infinity League started as a simple redraft league among a tight-knit group of friends and co-workers. Every season, managers go head-to-head for the ultimate prize the MIPS Cup while fighting to escape the shame of the Toilet Bowl.</p>
 `;
 
 /*   STEP 3   */
@@ -25,7 +20,134 @@ https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#ii-adding
 // To omit an optional field, set it's value to null
 
 export const managers = [
-    // {
+  {
+    "managerID": "831244275739131904",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)    
+    "name": "Gloku",
+    "bio": "",
+    "photo": "https://sleepercdn.com/uploads/f8ac3f788f1951c8d1b806a259345440.jpg", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "965736342346924032",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "SevenSocks",
+    "bio": "",
+    "photo": "https://sleepercdn.com/uploads/07c4601c9e2b4552a86751598945c0fc.jpg", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "965737329413464064",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "DarknessFalls84",
+    "bio": "",
+    "photo": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "967929615358447616",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "Mezz0",
+    "bio": "",
+    "photo": "https://sleepercdn.com/uploads/76f110af789f0bb99e37e2117eebb350.jpg", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "999563740007784448",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "sfg1990",
+    "bio": "",
+    "photo": "https://sleepercdn.com/uploads/ac1a91cdb1d72f2f2829fcd837594054.jpg", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "1052495753907638272",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "FREAKYMOE05",
+    "bio": "",
+    "photo": "https://sleepercdn.com/avatars/thumbs/07f39fef715a224c0c598c2214ffa210", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "1063903664923848704",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "Kingrick0521",
+    "bio": "",
+    "photo": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "1125587896460849152",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "mipsssss",
+    "bio": "",
+    "photo": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+  {
+    "managerID": "1127331247350525952",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+    "name": "slurpjuicewrld",
+    "bio": "",
+    "photo": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c", // square ratio recommended (no larger than 500x500)
+    "rival": {
+      name: "Rival", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 1, // 1 - 10
+    "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+  },
+
+  // {
     //   "roster": 1,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
     //   "name": "Your Name",
     //   "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
