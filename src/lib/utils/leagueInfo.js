@@ -56,6 +56,7 @@ export const managers = [
     "name": "DarknessFalls84",
     "bio": "",
     "photo": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e", // square ratio recommended (no larger than 500x500)
+    "favoriteTeam": "min", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     "rival": {
       name: "Rival", // Can be anything (usually your rival's name)
       link: null, // manager array number within this array, or null to link back to all managers page
@@ -70,6 +71,7 @@ export const managers = [
     "name": "Mezz0",
     "bio": "",
     "photo": "https://sleepercdn.com/uploads/76f110af789f0bb99e37e2117eebb350.jpg", // square ratio recommended (no larger than 500x500)
+    "favoriteTeam": "cin", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     "rival": {
       name: "Rival", // Can be anything (usually your rival's name)
       link: null, // manager array number within this array, or null to link back to all managers page
@@ -98,6 +100,7 @@ export const managers = [
     "name": "FREAKYMOE05",
     "bio": "",
     "photo": "https://sleepercdn.com/avatars/thumbs/07f39fef715a224c0c598c2214ffa210", // square ratio recommended (no larger than 500x500)
+    "favoriteTeam": "det", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     "rival": {
       name: "Rival", // Can be anything (usually your rival's name)
       link: null, // manager array number within this array, or null to link back to all managers page
@@ -112,6 +115,7 @@ export const managers = [
     "name": "Kingrick0521",
     "bio": "",
     "photo": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c", // square ratio recommended (no larger than 500x500)
+    "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     "rival": {
       name: "Rival", // Can be anything (usually your rival's name)
       link: null, // manager array number within this array, or null to link back to all managers page
