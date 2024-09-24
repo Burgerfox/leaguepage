@@ -40,6 +40,7 @@ export const managers = [
     "name": "SevenSocks",
     "bio": "",
     "photo": "https://sleepercdn.com/uploads/07c4601c9e2b4552a86751598945c0fc.jpg", // square ratio recommended (no larger than 500x500)
+    "favoriteTeam": "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     "rival": {
       name: "Rival", // Can be anything (usually your rival's name)
       link: null, // manager array number within this array, or null to link back to all managers page
