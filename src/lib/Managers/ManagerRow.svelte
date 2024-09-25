@@ -8,7 +8,7 @@
     let retired = false;
 
     // manager.roster is deprecated, pages should be using managerID now
-    let rosterID = managerID;
+    let rosterID = manager.roster;
     let year = null;
 
     if(manager.managerID) {
