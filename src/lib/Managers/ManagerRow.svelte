@@ -5,7 +5,7 @@
 
     export let manager, leagueTeamManagers, key;
 
-    let retired = false;
+    let retired = true;
 
     // manager.roster is deprecated, pages should be using managerID now
     let rosterID = manager.roster;
